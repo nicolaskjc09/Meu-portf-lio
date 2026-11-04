@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Card da lista de tarefas -->
+        <section class="card">
+
+            <!-- Campo para digitar uma nova tarefa -->
+            <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+
+            <!-- Botão para adicionar uma tarefa à lista -->
+            <button onclick="adicionarTarefa()">Adicionar</button>
+
+            <!-- Lista onde as tarefas serão exibidas -->
+            <ul id="lista"></ul>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Sistema de Lista de Tarefas</p>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

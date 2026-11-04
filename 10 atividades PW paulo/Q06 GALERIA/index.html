@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Galeria de Imagens</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Galeria organizada em grade -->
+        <section class="galeria">
+
+            <!-- Adicionando As fotos -->
+            <img src="fotos/HAND.jpg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/VOLEI1.jpg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/VOLEI2.jpg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/Manos.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/Mascara.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/guides.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/alice1.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/alice2.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/violeiro.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/MinhaNENE3.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/MinhaNENE2.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+            <img src="fotos/MinhaNENE.jpeg" alt="Imagem da galeria" onclick="abrirModal(this.src)">
+        </section>
+
+    </main>
+
+    <!-- Modal usado para mostrar a imagem em tamanho maior -->
+    <div id="modal" class="modal" onclick="fecharModal()">
+
+        <span class="fechar">&times;</span>
+
+        <img id="imagemModal" class="imagem-modal" alt="Imagem ampliada"
+            onclick="event.stopPropagation()">
+
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Sistema de Galeria de Nicolas</p>
+    </footer>
+
+    <!-- Conexão com o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

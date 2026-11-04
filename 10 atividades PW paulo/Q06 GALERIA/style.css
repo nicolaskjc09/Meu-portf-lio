@@ -1,0 +1,110 @@
+/* Cabeçalho da página */
+header {
+    background-color: #831f97;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Configuração geral da página */
+html,
+body {
+    min-height: 100%;
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #3b0764, #000000);
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Grade da galeria de imagens */
+.galeria {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Imagens da galeria */
+.galeria img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Fundo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagem ampliada dentro do modal */
+.imagem-modal {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 12px;
+}
+
+/* Botão para fechar o modal */
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* Rodapé da página */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+    /* Deixa duas imagens por linha */
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+
+    /* Deixa uma imagem por linha */
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}

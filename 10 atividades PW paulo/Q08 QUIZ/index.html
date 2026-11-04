@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Múltipla Escolha</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Quiz de Conhecimentos Gerais</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Card do quiz -->
+        <section class="quiz">
+
+            <!-- Número e texto da pergunta -->
+            <h2 id="numeroPergunta"></h2>
+            <h3 id="pergunta"></h3>
+
+            <!-- Área onde as opções serão exibidas -->
+            <div id="opcoes"></div>
+
+            <!-- Mensagem de aviso -->
+            <p id="aviso"></p>
+
+            <!-- Botão para avançar para a próxima pergunta -->
+            <button id="botaoProximo" onclick="proximaPergunta()">
+                Próxima
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Sistema de quiz</p>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

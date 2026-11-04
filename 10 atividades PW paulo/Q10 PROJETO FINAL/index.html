@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Notas Escolares</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Controle de Notas Escolares</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Formulário de cadastro dos alunos -->
+        <section class="card formulario">
+
+            <h2>Cadastrar aluno</h2>
+
+            <form onsubmit="cadastrarAluno(event)">
+
+                <!-- Campo para o nome do aluno -->
+                <label for="nome">Nome do aluno</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome do aluno"
+                    required
+                >
+
+                <!-- Campos para inserir as notas -->
+                <div class="camposNotas">
+
+                    <div>
+                        <label for="nota1">Nota 1</label>
+                        <input
+                            type="number"
+                            id="nota1"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="nota2">Nota 2</label>
+                        <input
+                            type="number"
+                            id="nota2"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="nota3">Nota 3</label>
+                        <input
+                            type="number"
+                            id="nota3"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <!-- Botão para cadastrar o aluno -->
+                <button type="submit">Cadastrar aluno</button>
+
+            </form>
+
+            <!-- Mensagem de aviso -->
+            <p id="mensagem"></p>
+
+        </section>
+
+        <!-- Tabela com os alunos cadastrados -->
+        <section class="card tabelaCard">
+
+            <h2>Alunos cadastrados</h2>
+
+            <!-- Área que permite mover a tabela em telas pequenas -->
+            <div class="tabelaResponsiva">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Média</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Local onde os alunos serão adicionados -->
+                    <tbody id="tabelaAlunos"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Notas Escolares</p>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

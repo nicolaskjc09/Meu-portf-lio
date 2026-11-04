@@ -1,0 +1,113 @@
+/* Cabeçalho da página */
+header {
+    background-color: #831f97;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Configuração geral da página */
+html,
+body {
+    height: 100%;
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #b341c9, #000000);
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centralização do quiz */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card principal do quiz */
+.quiz {
+    background-color: rgb(45, 45, 45);
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Número da pergunta */
+#numeroPergunta {
+    color: #d86bee;
+    text-align: center;
+}
+
+/* Texto da pergunta */
+#pergunta {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Organização das alternativas */
+.opcao {
+    display: block;
+    background-color: #555555;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse nas alternativas */
+.opcao:hover {
+    background-color: #666666;
+}
+
+/* Espaço entre o botão de seleção e o texto */
+.opcao input {
+    margin-right: 10px;
+}
+
+/* Botão de próxima pergunta */
+button {
+    width: 100%;
+    background-color: #831f97;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #a52dc0;
+}
+
+/* Mensagem de aviso */
+#aviso {
+    color: #ffb4b4;
+    text-align: center;
+}
+
+/* Rodapé da página */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 550px) {
+
+    .quiz {
+        width: 90%;
+    }
+
+}

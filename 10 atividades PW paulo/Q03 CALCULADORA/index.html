@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Calculadora Simples</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Card da calculadora -->
+        <section class="card">
+
+            <!-- Campo para o primeiro número -->
+            <label>Primeiro número</label>
+            <input type="number" id="numero1">
+
+            <!-- Campo para o segundo número -->
+            <label>Segundo número</label>
+            <input type="number" id="numero2">
+
+            <!-- Seleção da operação matemática -->
+            <label>Operação</label>
+
+            <select id="operacao">
+                <option value="+">Soma</option>
+                <option value="-">Subtração</option>
+                <option value="*">Multiplicação</option>
+                <option value="/">Divisão</option>
+            </select>
+
+            <!-- Botão que executa o cálculo -->
+            <button onclick="calcular()">Calcular</button>
+
+            <!-- Área onde o resultado será exibido -->
+            <h2 id="resultado">Resultado:</h2>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Sistema de Calculadora</p>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
